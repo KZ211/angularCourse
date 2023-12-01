@@ -3,11 +3,12 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-servers',
   templateUrl: './servers.component.html',
+  styleUrl: 'servers.component.css'
 })
 export class ServersComponent implements OnInit{
   allowNewServer = false;
   serverCreationStatus = 'No server was created!';
-  serverName = '';
+  serverName = 'TypeScript';
 
   constructor() { 
     setTimeout(()=>{
@@ -19,11 +20,11 @@ export class ServersComponent implements OnInit{
   }
 
   onCreateServer(){
-    this.serverCreationStatus = 'Server was created!';
+    this.serverCreationStatus = 'Server was created! Name is: ' + this.serverName;
   }
 
   onUpdateServerName(event:any){
     console.log(event.target.value);
-    this.serverName = "My Server name is " + (<HTMLInputElement>event.target).value;
+    this.serverName = (<HTMLInputElement>event.target).value;
   }
 }
