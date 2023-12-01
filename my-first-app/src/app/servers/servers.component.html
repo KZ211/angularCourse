@@ -9,7 +9,10 @@
     (click)="onCreateServer()"
 >Add Server</button>
 <p [innerText]="allowNewServer"></p>
-<p [innerText]="serverCreationStatus"></p>
+<p *ngIf="serverCreated; else noServer" [innerText]="serverCreationStatus"></p>
+<ng-template #noServer>
+    <p>VAMO BOCAAAA</p>
+</ng-template>
 <p [innerText]="serverName"></p>
 <app-server></app-server>
 <app-server></app-server>
