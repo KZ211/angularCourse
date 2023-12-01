@@ -3,12 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { Tarea2Component } from './tarea2/tarea2.component';
+import { ServersComponent } from './servers/servers.component';
+import { ServerComponent } from './server/app.server.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Tarea2Component
+    ServerComponent,
+    ServersComponent
   ],
   imports: [
     BrowserModule,
