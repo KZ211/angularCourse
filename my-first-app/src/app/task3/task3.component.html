@@ -1,0 +1,10 @@
+<hr>
+<button class="btn btn-primary"
+    (click)="activar()"
+>Mostar detalles</button>
+<hr>
+<p
+    [ngClass]="{fulanito:fulanito === true}"
+>contraseña secreta = atun</p>
+<hr>
+<app-task3-component *ngFor="let i of count" ></app-task3-component>
