@@ -4,7 +4,7 @@ import { Component } from "@angular/core";
     selector: 'app-server',
     templateUrl: './app.server.component.html',
     styles: `
-        .online {
+        .fulanito {
             color: blue;
             font-size: 30px;
         }
