@@ -1,7 +1,0 @@
-
-<div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
-    <label >Nombre de usuario</label>
-    <input type="text" class="form-control" [(ngModel)]="nombreDeUsuario">
-</div>
-<p [innerText]="nombreDeUsuario"></p>
-<button class="btn btn-primary" (click)="restablecer()" [disabled]="nombreDeUsuario===''">Cambiar nombre</button>
